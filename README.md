@@ -1,7 +1,7 @@
 # Vittles App
 Reducing food waste
 
-Tech Stack = Dagger 2, Retrofit, Room, Clean Architecture, MVP, Firebase, CameraX,  RxKotlin, Firebase ML Kit, MPChart, DecoView, JodaTime
+<h1>Tech Stack</h1> = Dagger 2, Retrofit, Room, Clean Architecture, MVP, Firebase, CameraX,  RxKotlin, Firebase ML Kit, MPChart, DecoView, JodaTime
 
 ![LIST - EMPTY](https://user-images.githubusercontent.com/32542424/120467979-02db2780-c3a1-11eb-918b-8f98fee126d9.jpg) ![LIST - ITEMS](https://user-images.githubusercontent.com/32542424/120468421-7f6e0600-c3a1-11eb-92af-1e7db13ee068.jpg)
 
