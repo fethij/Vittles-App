@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".productlist.productinfo.ProductInfoFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@id/layout">
+
+        <TextView
+            android:id="@+id/tvProductName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Product Name"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/ibEditName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/ibEditName"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal|center_vertical"
+            android:layout_marginEnd="24dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/edit_icon"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvProductName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvProductName"
+            app:srcCompat="@drawable/ic_edit_black_24dp"
+            tools:ignore="PrivateResource" />
+
+        <TextView
+            android:id="@+id/tvExpDateHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/et_expiration_date"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/tvProductName"
+            app:layout_constraintTop_toBottomOf="@+id/tvProductName" />
+
+        <TextView
+            android:id="@+id/tvExpirationDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="10.11.2019"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@+id/tvExpDateHeader"
+            app:layout_constraintTop_toBottomOf="@+id/tvExpDateHeader" />
+
+        <ImageButton
+            android:id="@+id/ibEditExpDate"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal|center_vertical"
+            android:layout_marginEnd="24dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/edit_icon"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvExpirationDate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvExpDateHeader"
+            app:srcCompat="@drawable/ic_edit_black_24dp"
+            tools:ignore="PrivateResource" />
+
+        <TextView
+            android:id="@+id/tvCreationDateHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/tv_creation_date"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="@+id/tvProductName"
+            app:layout_constraintTop_toBottomOf="@+id/tvExpirationDate" />
+
+        <TextView
+            android:id="@+id/tvCreationDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="10.11.2019"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/tvExpDateHeader"
+            app:layout_constraintTop_toBottomOf="@+id/tvCreationDateHeader" />
+
+        <ImageButton
+            android:id="@+id/ibEaten"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal|center_vertical"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/select_eaten"
+            android:padding="8dp"
+            android:foregroundTint="@android:color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvCreationDate"
+            app:srcCompat="@drawable/ic_eaten_black"
+            tools:ignore="PrivateResource" />
+
+        <ImageButton
+            android:id="@+id/ibDeleted"
+            style="@style/TextAppearance.AppCompat.Widget.Button.Borderless.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal|center_vertical"
+            android:layout_marginStart="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/select_eaten"
+            android:foregroundTint="@android:color/black"
+            android:padding="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ibEaten"
+            app:layout_constraintStart_toEndOf="@+id/ibEaten"
+            app:layout_constraintTop_toTopOf="@+id/ibEaten"
+            app:srcCompat="@drawable/ic_deleted_black"
+            tools:ignore="PrivateResource" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

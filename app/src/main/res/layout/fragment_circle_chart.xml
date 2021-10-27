@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".wastereport.WasteReportFragment">
+
+
+    <TextView
+        android:id="@+id/tvPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/null_percent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="60sp"
+        custom:layout_constraintBottom_toBottomOf="@+id/dynamicArcView"
+        custom:layout_constraintEnd_toEndOf="parent"
+        custom:layout_constraintStart_toStartOf="parent"
+        custom:layout_constraintTop_toTopOf="parent"
+        custom:layout_constraintVertical_bias="0.45" />
+
+    <TextView
+        android:id="@+id/tvLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/food_eaten"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        custom:layout_constraintEnd_toEndOf="parent"
+        custom:layout_constraintStart_toStartOf="parent"
+        custom:layout_constraintTop_toBottomOf="@+id/tvPercentage" />
+
+    <com.hookedonplay.decoviewlib.DecoView
+        android:id="@+id/dynamicArcView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="50dp"
+        custom:dv_lineWidth="15dp"
+        custom:layout_constraintHeight_percent="0.6"
+        custom:layout_constraintStart_toStartOf="parent"
+        custom:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

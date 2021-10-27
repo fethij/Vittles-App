@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:id="@+id/mainActivityRootView"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".productlist.ProductListFragment"
+    tools:showIn="@layout/activity_main">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mainToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:titleMarginStart="24dp"
+        app:titleTextColor="#000000">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <fragment
+        android:id="@+id/fragmentHost"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/coordinator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainToolbar"
+        app:layout_constraintVertical_bias="0.0"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/navigation_graph" />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/navView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="?android:attr/windowBackground"
+            android:theme="@style/Theme.MaterialComponents.Light"
+            app:fabAlignmentMode="center"
+            app:fabAnimationMode="scale"
+            app:fabCradleMargin="20dp"
+            app:fabCradleRoundedCornerRadius="30dp"
+            app:fabCradleVerticalOffset="10dp"
+            app:hideOnScroll="true"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/menu_main"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_vector_plus"
+            android:tint="@android:color/white"
+            app:borderWidth="0dp"
+            app:elevation="8dp"
+            app:layout_anchor="@id/navView"
+            app:layout_anchorGravity="bottom"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

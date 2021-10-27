@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/productListFragment">
+
+    <fragment
+        android:id="@+id/productListFragment"
+        android:name="com.example.vittles.productlist.ProductListFragment"
+        android:label="@string/view_title"
+        tools:layout="@layout/fragment_productlist">
+        <action
+            android:id="@+id/action_productListFragment_to_productInfoFragment"
+            app:destination="@id/productInfoFragment"/>
+        <argument
+            android:name="ProductToDelete"
+            app:argType="com.example.vittles.productlist.ParcelableProduct"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <argument
+            android:name="withSearch"
+            app:argType="boolean"
+            android:defaultValue="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/wasteReportFragment"
+        android:name="com.example.vittles.wastereport.WasteReportFragment"
+        android:label="@string/waste_report_title"
+        tools:layout="@layout/fragment_waste_report" >
+    </fragment>
+    <action android:id="@+id/action_global_productListFragment" app:destination="@id/productListFragment"/>
+    <action android:id="@+id/action_global_reportsFragment" app:destination="@id/wasteReportFragment" />
+    <fragment
+        android:id="@+id/scannerFragment"
+        android:name="com.example.vittles.scanning.ScannerFragment"
+        android:label="@string/scan_vittles_title"
+        tools:layout="@layout/fragment_scanner" >
+        <argument
+            android:name="previousFragment"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment><action android:id="@+id/action_global_scannerFragment" app:destination="@id/scannerFragment"/>
+    <fragment
+        android:id="@+id/productInfoFragment"
+        android:name="com.example.vittles.productlist.productinfo.ProductInfoFragment"
+        android:label="Product info"
+        tools:layout="@layout/fragment_product_info">
+        <argument
+            android:name="product"
+            app:argType="com.example.vittles.productlist.ParcelableProduct" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.vittles.settings.SettingsFragment"
+        android:label="@string/settings_title" />
+    <action android:id="@+id/action_global_settingsFragment" app:destination="@id/settingsFragment" />
+
+</navigation>

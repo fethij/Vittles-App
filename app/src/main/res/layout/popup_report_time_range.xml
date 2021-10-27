@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="0dp"
+        android:layout_height="0.1dp"
+        android:layout_marginTop="53dp"
+        android:background="#DDD9D9"
+        android:elevation="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/sortBy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:paddingEnd="0dp"
+        android:paddingStart="20dp"
+        android:text="@string/time_range"
+        android:textAlignment="textStart"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/lastSevenDays"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="sans-serif"
+        android:paddingEnd="0dp"
+        android:paddingStart="20dp"
+        android:text="@string/last_seven_days"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/ivColor1"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="16dp"
+        android:tint="@color/mediumGrey"
+        app:layout_constraintBottom_toTopOf="@+id/last30Days"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:srcCompat="@drawable/ic_circle" />
+
+    <ImageView
+        android:id="@+id/lastSevenDaysDot"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="16dp"
+        android:alpha="0"
+        android:tint="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/last30Days"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:srcCompat="@drawable/ic_circle_filled" />
+
+    <Button
+        android:id="@+id/last30Days"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="sans-serif"
+        android:paddingEnd="0dp"
+        android:paddingStart="20dp"
+        android:text="@string/last_30_days"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lastSevenDays"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/ivColor2"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="16dp"
+        android:tint="@color/mediumGrey"
+        app:layout_constraintBottom_toTopOf="@+id/lastYear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/last30Days"
+        app:srcCompat="@drawable/ic_circle" />
+
+    <ImageView
+        android:id="@+id/last30DaysDot"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="16dp"
+        android:alpha="0"
+        android:tint="@android:color/darker_gray"
+        app:layout_constraintBottom_toTopOf="@+id/lastYear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/last30Days"
+        app:srcCompat="@drawable/ic_circle_filled" />
+
+    <Button
+        android:id="@+id/lastYear"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="53dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="sans-serif"
+        android:paddingEnd="0dp"
+        android:paddingStart="20dp"
+        android:text="@string/last_year"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/last30Days"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/ivColor3"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="16dp"
+        android:tint="@color/mediumGrey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lastYear"
+        app:layout_constraintVertical_bias="0.538"
+        app:srcCompat="@drawable/ic_circle" />
+
+    <ImageView
+        android:id="@+id/lastYearDot"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="16dp"
+        android:alpha="0"
+        android:tint="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lastYear"
+        app:srcCompat="@drawable/ic_circle_filled" />
+
+
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

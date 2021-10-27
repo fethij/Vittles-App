@@ -1,0 +1,175 @@
+<resources>
+    <!--    Global-->
+    <string name="app_name">Vittles</string>
+    <string name="action_settings">Settings</string>
+
+    <!--    Global Buttons-->
+    <string name="btn_confirm">Confirm</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_yes">Yes</string>
+    <string name="btn_no">No</string>
+
+    <!--    Products Overview-->
+    <string name="view_title">My Vittles</string>
+    <string name="maxDaysRemaining">99</string>
+
+    <!--    Add Product Manually-->
+    <string name="add_product_title">Add Vittles</string>
+    <string name="et_product_name">Product name</string>
+    <string name="et_expiration_date">Expiration date</string>
+    <string name="expiration_format">%1$s/%2$s/%3$s</string>
+    <string name="product_added">Product added!</string>
+    <string name="product_updated">Product updated!</string>
+    <string name="product_updated_failed">Could not update product!</string>
+    <string name="product_name_invalid">Product name should not be empty!</string>
+    <string name="product_deleted">Product deleted!</string>
+    <string name="product_deleted_failed">Could not delete product!</string>
+    <string name="empty_state_Add_New_Vittle">\n\nClick on button at the bottom to add vittles</string>
+
+    <!--    Search-->
+    <string name="no_search_results">Nothing to show :(</string>
+
+    <!--    Validations-->
+    <string name="empty_fields">Please fill in all fields</string>
+    <string name="fill_in_fields">Scan or fill in the necessary fields</string>
+    <string name="no_scanning">Can not use scanning.</string>
+    <string name="no_permission">Permissions not granted by the user.</string>
+
+    <!--    Settings-->
+    <string name="settings_title">Settings</string>
+    <string name="settings_vibration">Vibrations</string>
+    <string name="settings_vibration_detail">Scanning and swiping vibrations.</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_notifications_detail">Receiving notifications for expiring products.</string>
+    <string name="settings_schedule">Schedule</string>
+    <string name="settings_schedule_detail">Choose notification schedule.</string>
+    <string name="settings_advanced">Advanced</string>
+    <string name="settings_saved">Saved products</string>
+    <string name="settings_saved_detail">Remove saved product names.</string>
+    <string name="settings_performance">Performance</string>
+    <string name="settings_performance_detail">Select scanning frequency.</string>
+    <string name="settings_popup_confirm_header">Are you sure?</string>
+    <string name="settings_popup_confirm_subtext">All saved product names will be removed. \n You will have to add them again.</string>
+    <string name="settings_remove_products_success">Removed product names!</string>
+    <string name="settings_remove_products_fail">Could not remove product names.</string>
+
+
+    <!--    Image Content Descriptions-->
+    <string name="border">.</string>
+    <string name="close_search">Close Search</string>
+    <string name="search">Search</string>
+
+    <!--    Sorting-->
+    <string name="sort_by">Sort by</string>
+    <string name="sorting">Sorting </string>
+    <string name="days_remaining_lh">Days Remaining (Asc)</string>
+    <string name="days_remaining_hl">Days Remaining (Desc)</string>
+    <string name="alphabetic_az">Alphabetic (A-Z)</string>
+    <string name="alphabetic_za">Alphabetic (Z-A)</string>
+    <string name="newest">Newest</string>
+    <string name="oldest">Oldest</string>
+
+    <!--    Waste Report-->
+    <string name="vittles_eaten">Vittles eaten</string>
+    <string name="vittles_expired">Vittles expired</string>
+    <string name="count_fail">Error while loading statistic</string>
+    <string name="this_week">This week</string>
+    <string name="waste_percent">%1$d%%</string>
+    <string name="food_eaten">Food eaten</string>
+    <string name="time_range">Time range</string>
+    <string name="last_seven_days">Last 7 days</string>
+    <string name="last_30_days">Last 30 days</string>
+    <string name="last_year">Last year</string>
+    <string name="content_description">Button time range</string>
+    <string name="null_percent">0%</string>
+    <string name="zero">0</string>
+    <string name="dot">Dot</string>
+
+    <!--    Waste Report-->
+    <string name="waste_report_title">Waste report</string>
+    <string name="bar_chart_error">"Error Bar Chart"</string>
+    <string name="circle_chart_error">"Error Circle Chart"</string>
+
+    <!--    Scan Vittles-->
+    <string name="scan_vittles_title">Scan Vittles</string>
+    <string name="cd_checklist_image">Checklist checkbox</string>
+    <string name="product_name_scanner">PRODUCT NAME</string>
+    <string name="date_format_scanner">DD/MM/YYYY</string>
+    <string name="barcode_title_scanner">Barcode</string>
+    <string name="exp_date_title_scanner">Expiration date</string>
+    <string name="cd_scanning_pane">Scanning pane</string>
+    <string name="btn_add_vittle">Add Vittle</string>
+    <string name="btn_use_camera">Use camera</string>
+
+    <!--    Add product manually-->
+    <string name="edit_product_name">Edit product name</string>
+    <string name="edit_expiration_date">Edit expiration date</string>
+    <string name="edit_product_name_message">The product could not be found, please fill in a product name manually.</string>
+
+    <!--    Scan Products-->
+    <string name="edit_icon">Edit</string>
+
+    <!--    Product info-->
+    <string name="tv_creation_date">Creation date</string>
+    <string name="select_eaten">Set product as eaten</string>
+    <string name="select_deleted">Set product as deleted</string>
+
+    <!--    Menu-->
+    <string name="menu_home">Home</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_reports">Reports</string>
+    <string name="menu_settings">Settings</string>
+
+    <!--    Pop-Ups-->
+    <string name="close_to_expiration_header">Almost expired!</string>
+    <string name="close_to_expiration_subText">The scanned product expires in %d day%s. \n Are you sure you want to add it?</string>
+    <string name="already_expired_header">Already expired!</string>
+    <string name="already_expired_subText">The scanned product is already past it’s expiration date. \n Do you still want to add it?</string>
+    <string name="remove_product_header">Remove Product</string>
+    <string name="remove_product_subText">Do you want to remove this product? \n It won\'t be used for the food waste report.</string>
+
+    <!-- Praises for delighter -->
+    <string-array name="praises">
+        <item>😁</item>
+        <item>😃</item>
+        <item>😄</item>
+        <item>😊</item>
+        <item>😍</item>
+        <item>😘</item>
+        <item>🙌</item>
+        <item>✌</item>
+        <item>🌍</item>
+        <item>🍀</item>
+        <item>👌</item>
+        <item>👏</item>
+        <item>👍</item>
+        <item>💖</item>
+        <item>💪</item>
+        <item>🌳</item>
+        <item>🌻</item>
+        <item>🌞</item>
+        <item>✨</item>
+        <item>🍎</item>
+        <item>❤</item>
+        <item>🤩</item>
+    </string-array>
+
+    <!--    Content Descriptions-->
+    <string name="cd_refresh_button">Refresh</string>
+    <string name="cd_torch">Torch</string>
+    <string name="cd_expand">Expand</string>
+
+    <!-- Notification options -->
+    <string-array name="notification_time">
+        <item>Daily</item>
+        <item>Weekly</item>
+        <item>Monthly</item>
+    </string-array>
+
+    <!-- Performance options -->
+    <string-array name="performance_options">
+        <item>Low</item>
+        <item>Normal</item>
+        <item>High</item>
+    </string-array>
+</resources>

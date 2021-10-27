@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "450584406275",
+    "firebase_url": "https://vittles-bro.firebaseio.com",
+    "project_id": "vittles-bro",
+    "storage_bucket": "vittles-bro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:450584406275:android:7598ecb37ab74f6da76136",
+        "android_client_info": {
+          "package_name": "com.example.vittles"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "450584406275-1c891bnlc6ne5jg8o8skbreqkfhv0543.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vittles",
+            "certificate_hash": "cc1729a81393a79dc95251e964c10758a032d394"
+          }
+        },
+        {
+          "client_id": "450584406275-bp6q4pbdfhtv2kiiup6qmk85ic8varsn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "*"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "450584406275-bp6q4pbdfhtv2kiiup6qmk85ic8varsn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

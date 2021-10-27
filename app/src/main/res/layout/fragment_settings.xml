@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:paddingStart="24dp"
+    android:paddingEnd="24dp"
+    tools:context=".MainActivity"
+    tools:ignore="NestedWeights">
+
+    <LinearLayout
+        android:id="@+id/llVibration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_vibration"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/settings_vibration_detail"
+                android:textAlignment="textStart" />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/vibration_toggle"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:defaultValue="true"
+            android:theme="@style/SCBSwitch"
+            android:title="@string/settings_notifications"
+            tools:layout_editor_absoluteX="205dp"
+            tools:layout_editor_absoluteY="508dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSchedule"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.075"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llNotifications">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_schedule"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/settings_schedule_detail" />
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/notification_timer"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:entries="@array/notification_time"
+            android:spinnerMode="dropdown"
+            tools:layout_editor_absoluteX="57dp"
+            tools:layout_editor_absoluteY="125dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llNotifications"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llVibration">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_notifications"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/settings_notifications_detail"
+                android:textAlignment="textStart" />
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/notification_toggle"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:defaultValue="true"
+            android:theme="@style/SCBSwitch"
+            android:title="@string/settings_notifications"
+            tools:layout_editor_absoluteY="175dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llAdvancedSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/llAdvanced">
+
+        <LinearLayout
+            android:id="@+id/llScanningPerformance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            app:layout_constraintHeight_percent="0.075">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_performance"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/settings_performance_detail"
+                    android:textAlignment="textStart" />
+
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/performance_picker"
+                android:layout_width="250dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:entries="@array/performance_options"
+                android:spinnerMode="dropdown"
+                tools:layout_editor_absoluteX="57dp"
+                tools:layout_editor_absoluteY="125dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llSavedProducts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            app:layout_constraintHeight_percent="0.075">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/settings_saved"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/settings_saved_detail"
+                    android:textAlignment="textStart" />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/ibRemoveSavedProducts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill_horizontal|center_vertical"
+                android:layout_margin="8dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="@string/settings_saved"
+                android:duplicateParentState="false"
+                android:focusable="true"
+                android:tint="@color/darkGrey"
+                app:srcCompat="@drawable/ic_deleted_black"
+                tools:ignore="PrivateResource" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llAdvanced"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.075"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/llSchedule">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/settings_advanced"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/ibAdvanced"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill_horizontal|center_vertical"
+            android:layout_margin="12dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="false"
+            android:contentDescription="@string/cd_expand"
+            android:duplicateParentState="true"
+            android:tint="@color/darkGrey"
+            app:srcCompat="@drawable/ic_arrow_drop_down"
+            tools:ignore="PrivateResource" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

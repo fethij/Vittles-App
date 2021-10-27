@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: com.takisoft.fix:preference-v7:25.3.0.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/af8fd80ceba76ce51f8e7a99be860278/jetified-preference-v7-25.3.0.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/af8fd80ceba76ce51f8e7a99be860278/jetified-preference-v7-25.3.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/af8fd80ceba76ce51f8e7a99be860278/jetified-preference-v7-25.3.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/af8fd80ceba76ce51f8e7a99be860278/jetified-preference-v7-25.3.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.takisoft.fix/preference-v7/25.3.0.0/e925ae86f1763f524138bcab59ba382124718898/preference-v7-25.3.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.takisoft.fix/preference-v7/25.3.0.0/aba912af41db4a5e1b06040c9d101da5226ef2ad/preference-v7-25.3.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

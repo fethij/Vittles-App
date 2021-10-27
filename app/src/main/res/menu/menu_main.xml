@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.vittles.MainActivity">
+    <item
+        android:id="@+id/productListFragment"
+        android:orderInCategory="1"
+        android:title="@string/menu_home"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_menu_home"
+        tools:ignore="AlwaysShowAction" />
+    <item
+        android:id="@+id/search"
+        android:orderInCategory="2"
+        android:title="@string/menu_search"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_magnifying_glass"/>
+    <item
+        android:id="@+id/placeholder"
+        android:orderInCategory="3"
+        android:enabled="false"
+        app:showAsAction="always"
+        android:title="" />
+    <item
+        android:id="@+id/placeholder2"
+        android:orderInCategory="4"
+        android:enabled="false"
+        app:showAsAction="always"
+        android:title="" />
+    <item
+        android:id="@+id/wasteReportFragment"
+        android:orderInCategory="5"
+        android:title="@string/menu_reports"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_menu_history"/>
+    <item
+        android:id="@+id/settingsFragment"
+        android:orderInCategory="6"
+        android:title="@string/menu_settings"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_menu_settings"/>
+</menu>

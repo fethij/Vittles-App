@@ -1,0 +1,88 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+
+        <!--        COLOR-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/lightGrey</item>
+        <item name="android:statusBarColor">@color/darkGrey</item>
+        <item name="colorAccent">@color/black</item>
+
+        <!--        BUTTONS-->
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="buttonStyle">@style/AppTheme.ButtonStyle</item>
+
+        <!--        LAYOUT-->
+        <item name="actionBarStyle">@style/AppTheme.ActionBarStyle</item>
+        <item name="android:windowBackground">@color/white</item>
+
+        <!--        DATE PICKER-->
+        <item name="android:datePickerDialogTheme">@style/AppTheme.DatePickerDialogTheme</item>
+    </style>
+
+    <!-- MAIN PAGE SPLASH -->
+    <style name="AppTheme.Launcher">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+    </style>
+
+    <!--    MAIN PAGE-->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <!--    ALREADY EXISTING STUFF-->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:actionBarStyle">@style/AppTheme.ActionBarStyle</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:actionBarStyle">@style/AppTheme.ActionBarStyle</item>
+    </style>
+
+    <!--    HEADER-->
+    <style name="AppTheme.ActionBarStyle" parent="Widget.AppCompat.Light.ActionBar">
+        <item name="background">@color/white</item>
+    </style>
+
+    <!--    BUTTONS-->
+    <style name="AppTheme.ButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:height">50dp</item>
+    </style>
+
+    <style name="AppTheme.SortButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <!--    DATE PICKER-->
+    <style name="AppTheme.DatePickerDialogTheme" parent="android:Theme.Material.Light.Dialog">
+        <item name="android:colorAccent">@color/darkGrey</item>
+        <item name="android:buttonBarButtonStyle">@style/AppTheme.DatePickerButtonTextStyle</item>
+        <item name="android:colorButtonNormal">@color/white</item>
+    </style>
+
+    <style name="AppTheme.DatePickerButtonTextStyle" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    //switch
+    <style name="SCBSwitch" parent="Theme.AppCompat.Light">
+        <!-- active thumb & track color (30% transparency) -->
+        <item name="colorControlActivated">#26F391</item>
+
+        <!-- inactive thumb color -->
+        <item name="colorSwitchThumbNormal">#f1f1f1
+        </item>
+
+        <!-- inactive track color (30% transparency) -->
+        <item name="android:colorForeground">#42221f1f
+        </item>
+    </style>
+
+</resources>

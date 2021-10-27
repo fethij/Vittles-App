@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+
+        <!--        COLOR-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/lightGrey</item>
+        <item name="android:statusBarColor">@color/lightGrey</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="colorAccent">@color/black</item>
+
+        <!--        BUTTONS-->
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+        <item name="buttonStyle">@style/AppTheme.ButtonStyle</item>
+
+        <!--        LAYOUT-->
+        <item name="actionBarStyle">@style/AppTheme.ActionBarStyle</item>
+        <item name="android:windowBackground">@color/white</item>
+
+        <!--        DATE PICKER-->
+        <item name="android:datePickerDialogTheme">@style/AppTheme.DatePickerDialogTheme</item>
+    </style>
+
+    <!-- MAIN PAGE SPLASH -->
+    <style name="AppTheme.Launcher">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+    </style>
+</resources>
